@@ -1,5 +1,5 @@
 function produceDrivingRange (blockRange) {
-  return function (startBlock, endBlock) {
+  return function(startBlock, endBlock) {
     let startEndBlock = Math.abs(parseInt(startBlock) - parseInt(endBlock));
     let difference = Math.abs(startEndBlock - blockRange);
     if (startEndBlock > blockRange) {
@@ -7,5 +7,11 @@ function produceDrivingRange (blockRange) {
     } else {
       return `within range by ${difference}`;
     }
+  }
+}
+
+function produceTipCalculator () {
+  return function() {
+    
   }
 }
