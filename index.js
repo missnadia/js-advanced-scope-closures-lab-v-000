@@ -10,8 +10,8 @@ function produceDrivingRange (blockRange) {
   }
 }
 
-function produceTipCalculator () {
-  return function() {
-    
+function produceTipCalculator (percentOfTip) {
+  return function(fare) {
+    return (fare * percentOfTip);
   }
 }
